@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080f20">
+  <meta name="description" content="Открывай кейсы, собирай коллекцию и следи за новостями CASE ROOM.">
+  <title>CASE ROOM — магазин кейсов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./theme.css">
+</head>
+<body>
+  <div class="topline"><span class="live-dot"></span> МАГАЗИН ОТКРЫТ <span class="topline-divider">/</span> ПРИВЕТСТВЕННЫЙ БОНУС ДЛЯ НОВЫХ ИГРОКОВ</div>
+  <header class="header">
+    <a class="brand" href="#home"><span class="brand-icon">C<span>R</span></span><span class="brand-name">CASE<span>ROOM</span></span></a>
+    <nav class="nav" aria-label="Главная навигация">
+      <a href="#cases">Кейсы</a><a href="#how">Как это работает</a><a href="#blog">Блог</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-button" aria-label="Переключить тему" title="День / ночь">☼</button>
+      <button id="account-button" class="account-button"><span class="account-symbol">◉</span><span id="account-label">Аккаунт</span></button>
+      <button id="cart-button" class="cart-button">Корзина <span id="cart-count">0</span></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> ОТКРЫВАЙ. СОБИРАЙ. ПОБЕЖДАЙ.</div>
+        <h1>ТВОЙ СЛЕДУЮЩИЙ<br><span>ЛЮБИМЫЙ СКИН</span><br>УЖЕ ВНУТРИ.</h1>
+        <p>Выбирай кейс, открывай коллекцию и лови тот самый дроп. Хорошие эмоции начинаются здесь.</p>
+        <div class="hero-actions"><a href="#cases" class="button button-primary">Выбрать кейс <span>↗</span></a><a href="#how" class="text-link">Как это работает <span>↓</span></a></div>
+        <div class="hero-stats"><div><strong id="catalog-count">03</strong><small>КЕЙСА В КАТАЛОГЕ</small></div><div><strong>02</strong><small>ТЕМЫ ОФОРМЛЕНИЯ</small></div><div><strong>0</strong><small>ПОДКЛЮЧЁННЫХ ОПЛАТ</small></div></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-glow"></div><div class="hero-grid"></div>
+        <div class="hero-card hero-card-back"><span class="card-mini-label">LIMITED DROP</span><div class="hero-crate crate-purple">✦</div><span class="card-mini-name">NIGHT OPS</span></div>
+        <div class="hero-card hero-card-front"><span class="card-mini-label">CASE Nº 001</span><div class="hero-crate">⬡</div><span class="card-mini-name">FIRST BLOOD</span><span class="hero-card-price">от <b>490 ₸</b></span></div>
+        <div class="floating-sticker">★<span>ТВОЯ УДАЧА<br>НАЧИНАЕТСЯ</span></div><div class="hero-art-caption">СОБЕРИ КОЛЛЕКЦИЮ<br><span>ОДИН ДРОП ЗА ДРУГИМ</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span class="hero-progress"><i></i></span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="section cases-section" id="cases">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> ТВОЯ СЛЕДУЮЩАЯ НАХОДКА</div><h2>ВЫБИРАЙ СВОЙ <span>КЕЙС</span></h2></div><a href="#cases" class="text-link">Все кейсы <span>↗</span></a></div>
+      <div id="case-list" class="case-grid"><div class="loading-card">Загружаем кейсы...</div></div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="how-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="how-crate">⬡</div><div class="how-label">DROP<br><span>INCOMING</span></div></div>
+      <div class="how-copy"><div class="eyebrow"><span class="eyebrow-line"></span> БЕЗ ЛИШНИХ ШАГОВ</div><h2>ТРИ ШАГА.<br><span>ОДИН КРУТОЙ ДРОП.</span></h2>
+        <div class="steps"><div class="step"><span>01</span><div><h3>Выбери кейс</h3><p>Найди коллекцию, которая подходит именно тебе.</p></div></div><div class="step"><span>02</span><div><h3>Оформи заказ</h3><p>Добавь кейс в корзину. Это учебный магазин — оплата не подключена.</p></div></div><div class="step"><span>03</span><div><h3>Следи за новостями</h3><p>Заглядывай в блог — там новые коллекции и обновления.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="section blog-section" id="blog"><div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> НОВОСТИ И ОБНОВЛЕНИЯ</div><h2>ИЗ <span>БЛОГА</span></h2></div></div><div id="blog-list" class="blog-grid"><p class="empty-note">Скоро здесь появятся новости.</p></div></section>
+    <section class="contact-strip"><div><span class="eyebrow">ЕСТЬ ВОПРОС?</span><h2>МЫ НА СВЯЗИ.</h2></div><a id="whatsapp-link" class="button button-dark" href="#" target="_blank" rel="noopener noreferrer" hidden>Написать в WhatsApp <span>↗</span></a></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-icon">C<span>R</span></span><span class="brand-name">CASE<span>ROOM</span></span></a><span>© 2026 CASE ROOM. УЧЕБНЫЙ ПРОЕКТ.</span><a href="#home">НАВЕРХ ↑</a></footer>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Закрыть">×</button><div id="modal-content"></div></section></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
